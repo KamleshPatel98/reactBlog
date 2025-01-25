@@ -1,6 +1,6 @@
-import './App.css'
+import React from 'react'
 
-    export default function Category() {
+export default function Category() {
     return (
         <div>Category</div>
     )

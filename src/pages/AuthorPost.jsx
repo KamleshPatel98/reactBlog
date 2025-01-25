@@ -1,6 +1,6 @@
-import './App.css'
+import React from 'react'
 
-    export default function AuthorPost() {
+export default function AuthorPost() {
     return (
         <div>AuthorPost</div>
     )

@@ -1,6 +1,6 @@
-import './App.css'
+import React from 'react'
 
-    export default function Constact() {
+export default function Constact() {
     return (
         <div>Constact</div>
     )
