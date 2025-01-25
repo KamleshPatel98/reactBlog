@@ -17,6 +17,7 @@ import CategoryPost from "../pages/CategoryPost"
 import Contact from "../pages/Contact"
 import Login from "../pages/Login"
 import Register from "../pages/Register"
+import ErrorPage from "../pages/ErrorPage";
 
 
 export default function Router() {
@@ -36,6 +37,11 @@ export default function Router() {
                         <Route path="/register" element={<Register />} />
                     </Routes>
                 <Footer />
+
+                <Routes>
+                    {/* Catch-all route for unmatched paths */}
+                    <Route path="*" element={<ErrorPage />} />
+                </Routes>
             </BrowserRouter>
         </>
     )
