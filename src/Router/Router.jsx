@@ -35,13 +35,11 @@ export default function Router() {
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/login" element={<Login />} />
                         <Route path="/register" element={<Register />} />
+
+                        {/* Catch-all route for unmatched paths */}
+                        <Route path="*" element={<ErrorPage />} />
                     </Routes>
                 <Footer />
-
-                <Routes>
-                    {/* Catch-all route for unmatched paths */}
-                    <Route path="*" element={<ErrorPage />} />
-                </Routes>
             </BrowserRouter>
         </>
     )
