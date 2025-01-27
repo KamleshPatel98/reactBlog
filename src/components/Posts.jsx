@@ -10,11 +10,11 @@ import PostItem from './PostItem'
 export default function Posts(){
     const [posts,setPosts] = useState(PostsData)
     return (
-        <section className='posts'>
+        <section className="posts">
             {
                 posts.map(({id,title,image,description,category,authorId},index) =>
-                    <PostItem key={index} id={id} title={title} image={image} description={description} category={category} authorId={authorId}
-                    />)
+                    <PostItem key={index} id={id} title={title} image={image} description={description} category={category} authorId={authorId}/>
+                )
             }
         </section>
     )

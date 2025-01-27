@@ -7,8 +7,10 @@ import Sliders from '../components/Sliders'
 export default function Home() {
     return (
         <>
-            {/* <Sliders /> */}
-            <Posts />
+            <div className="container">
+                {/* <Sliders /> */}
+                    <Posts />
+            </div>
         </>
     )
 }
